@@ -1,0 +1,41 @@
+1. What is the equals method inherited from Object comparing?
+It's comparing the reference addresses.
+
+2. What is a more natural way to think of equality of two Point2D instances?
+theyre two coordinates at the same point.
+
+3. What is the toString method inherited from Object returning?
+The address in memory.
+
+4. What is a more natural way to represent a Point2D instance as a String? 
+An (x,y) coordinate
+
+5. What is the String output of this method call on the upcast point? What does this imply about
+overridden methods? 
+It retained the overridden method of toString. This implies that overridden methods 
+will be retained because it was overridden before it was cast back.
+
+6. Why do subclass constructor calls work the way they do? Come up with a plausible reason for the
+hierarchical superclass constructor calls. (I’m not worried about a correct response, just 
+a thoughtful one.) 
+because they work off of clearly defined rules regarding classes (super/sub classes)
+this gives them the abilitiy to share traits incrementally and rationally.
+
+7. Did the attempt to call a method from the superclass (SetOfPoints) from an instance of the
+subclass (LineSegment) work? Why do you think this is? Why does this make sense? Why is
+this useful?
+yes because it inherited it. it makes sense because linesegment is made of setofpoints, and it's 
+useful because it keeps me from writing code twice
+
+8. Were you allowed to create a SetOfPoints that was a Triangle—i.e., did the code
+successfully compile and run? Why do you think this is? 
+
+yes because triangle extends set of points
+
+9. Did the downcasting and method calls function properly? Posit a reason for this behavior. 
+no. probably because a set of points is not neccesarily a triangle, yet a triangle is definitley 
+a setofpoints
+
+10. Did the downcasting and method calls function properly? Compare and contrast this with the
+situation examined in question 9. If the behavior differed, why do you think that is? 
+no, see answer for number 9.
