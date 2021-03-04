@@ -40,7 +40,7 @@ public class StudentRoster {
 			else if (userChoice == 3) {
 				checkEnrollment(); 
 			}	
-				
+			
 			// User wants to view the entire roster. 
 			else if (userChoice == 4) {
 				printRoster(); 
